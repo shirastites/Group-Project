@@ -1,0 +1,38 @@
+---
+title: "Credit Card Default Factors in Taiwan"
+author: "Shira Stites and Marc Al-Helou"
+date: "January 16, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project Objective
+
+We plan to use a data set with default data on Taiwanese clients for 6 months in 2005.
+We will look at what set of demographic and financial factors are most predictive of default probability. 
+
+
+```{r cars}
+summary(cars)
+```
+
+## Process
+
+1) Define the variables and make sure they are metric 
+2) Scale variables if necessary
+3) Conduct separate analyses of 3 sets of variables (demographic, financial, combined)
+4) Look at correlations of variables
+5) Conduct a factor analysis including dimensionality reduction
+6) Determine relevent factors
+7) Derive predictive regression model using each set of variables (demographic, financial, combined)
+8) See which model is the most predictive
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
