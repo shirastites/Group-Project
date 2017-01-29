@@ -193,11 +193,11 @@ knitr::kable(Rotated_Factors_thres)
 ```
 As described in this chart the components can be described as below:
 
-Component 1 - Predominantly characterized by bill amounts
-Component 2 - Predominantly characterized by payments
-Component 3 - Predominantly characterized by payment amounts
-Component 4 - Predominantly characterized by age, marriage and education
-Component 5 - Predominantly characterized by gender
+* Component 1 - Predominantly characterized by bill amounts
+* Component 2 - Predominantly characterized by payments
+* Component 3 - Predominantly characterized by payment amounts
+* Component 4 - Predominantly characterized by age, marriage and education
+* Component 5 - Predominantly characterized by gender
 
 Using these 5 rotated factors, we can create a new dataset where our observations are as follows (for the first 10 observations):
 
@@ -261,7 +261,7 @@ rightcounter = 0;
 
 for (i in 1:length(predicteddefault))
 {  
-  if (predicteddefault[i] < -1) {predicteddefault[i]=0} else {predicteddefault[i]=1}
+  if (predicteddefault[i]<-1) {predicteddefault[i]=0} else {predicteddefault[i]=1}
   if (predicteddefault[i] - test$default.payment.next.month[i] == 0) {rightcounter=rightcounter+1}
 }
 
